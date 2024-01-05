@@ -6,93 +6,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Messages: AfricaNation</title>
-	<link rel="stylesheet" href="navigations.css">
-
+	<link rel="stylesheet" href="styles/navigations.css">
+	<link rel="icon" type="image/x-icon" href="images/mapbackground.jpg">
+	<style>
+		input {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+		div {
+			text-align: left;
+		}
+		form {
+            margin-top: 20px;
+			margin-right: 20px;
+        }
+		a {
+			font-weight: bold;
+			text-decoration: none;
+		}
+		
+	</style>
 </head>
 <body>
     <header>
-        <h1><a href="home.html">AfricaNation</a></</h1>
+        <h1><a id="up" href="#down">&nbsp</a>AfricaNation</</h1>
     </header>
 
     <nav>
-        <a href="#home">Home</a>
+        <a href="home.html">Home</a>
         Messages
         <a href="notifications.html">Notifications</a>
         <a href="profile.html">My Profile</a>
         <!-- Add more navigation links as needed -->
+		
+		<form action="/search">
+			<input type="text" name="q" size="32">		 
+			<input type="submit" name="search" value="Search">
+		</form>
     </nav>
 
     <section>
-        <h2>Recent Messages</h2>
+        <h2>Recent Messages </h2>
         <div class="messages">
             <div class="message">
-                <div class="message-content">
+                <a href="chat.html"><div class="message-content">
                     <p>Sender: User1</p>
                     <p>Message: Hey, how are you doing?</p>
-                </div>
-            </div>
-            <div class="message">
-                <div class="message-content">
-                    <p>Sender: User1</p>
-                    <p>Message: Hey, how are you doing?</p>
-                </div>
-            </div>
-            <div class="message">
-                <div class="message-content">
-                    <p>Sender: User1</p>
-                    <p>Message: Hey, how are you doing?</p>
-                </div>
-            </div>
-            <div class="message">
-                <div class="message-content">
-                    <p>Sender: User1</p>
-                    <p>Message: Hey, how are you doing?</p>
-                </div>
-            </div>
-            <div class="message">
-                <div class="message-content">
-                    <p>Sender: User1</p>
-                    <p>Message: Hey, how are you doing?</p>
-                </div>
-            </div>
-            <div class="message">
-                <div class="message-content">
-                    <p>Sender: User1</p>
-                    <p>Message: Hey, how are you doing?</p>
-                </div>
-            </div>
-            <div class="message">
-                <div class="message-content">
-                    <p>Sender: User1</p>
-                    <p>Message: Hey, how are you doing?</p>
-                </div>
-            </div>
-            <div class="message">
-                <div class="message-content">
-                    <p>Sender: User1</p>
-                    <p>Message: Hey, how are you doing?</p>
-                </div>
-            </div>
-            <div class="message">
-                <div class="message-content">
-                    <p>Sender: User1</p>
-                    <p>Message: Hey, how are you doing?</p>
-                </div>
-            </div>
-            <div class="message">
-                <div class="message-content">
-                    <p>Sender: User1</p>
-                    <p>Message: Hey, how are you doing?</p>
-                </div>
-            </div>
-
-			
+                </div></a>
+			</div>
+			            			
 		</div>
             <!-- Add more messages as needed -->
         </div>
+		<a id="down" href="#up">Go up</a>
     </section>
 
     <footer>
+		
         &copy; 2023 AfricaNation. All rights reserved.
     </footer>
 </body>

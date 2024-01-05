@@ -6,88 +6,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create a New Account: AfricaNation</title>
-	<link rel="stylesheet" href="naijaland1.css">
-    <!-- <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: url('images/background.png') center/cover no-repeat;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        }
-
-        form {
-            max-width: 400px;
-            width: 100%;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        h1 {
-            color: #007bff;
-            margin-bottom: 20px;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: bold;
-            text-align: left;
-            width: 100%;
-        }
-
-        input {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-sizing: border-box;
-        }
-
-        button {
-            width: 100%;
-            padding: 12px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #0056b3;
-        }
-
-        p {
-            margin-top: 15px;
-            text-align: center;
-            color: #333;
-        }
-
-        a {
-            color: #007bff;
-            text-decoration: none;
-            font-weight: bold;
-            margin-top: 10px;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-    </style> -->
+	<link rel="stylesheet" href="styles\naijaland1.css">
 </head>
 <body>
     <form>
-        <h1>Join <a href="home.html"><b>AfricaNation</b></a></h1>
+        <h1>Join AfricaNation</h1>
         <label for="username">Username:</label>
         <input type="text" id="username" name="username" required>
 
@@ -97,9 +20,19 @@
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" required>
 
+		<label for="phoneno">Phone Number:</label>
+        <input type="number" id="phoneno" name="phoneno" required>
+		
+		<label for="confpassword">Confirm Password:</label>
+        <input type="password" id="confpassword" name="confirmpassword" required>
+		
         <button type="submit">Create Account</button>
 
-        <p>Already have an account? <a href="login_page.html">Login here</a>.</p>
+        <p>Already have an account? <a href="login_page.html">Sign in here</a> <br> or <br> <a href='home.html'><b>View Site</b></a> as Guest.</p>
+		<footer>
+        &copy; 2023 AfricaNation. All rights reserved.
+		</footer>
     </form>
+	
 </body>
 </html>
